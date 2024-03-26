@@ -1,0 +1,16 @@
+.header__contain {
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    height: 30px;
+justify-content: space-between;
+}
+
+.clock {
+    color: white;
+}
+
+.historico {
+    color: white;
+    margin-left: 240px;
+}

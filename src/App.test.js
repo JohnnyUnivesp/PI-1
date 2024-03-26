@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+function toggleExpand(menuId) {
+  var menu = document.getElementById(menuId);
+  if (menu.style.display === "none") {
+      menu.style.display = "block";
+  } else {
+      menu.style.display = "none";
+  }
+}
