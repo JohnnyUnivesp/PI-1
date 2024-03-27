@@ -1,25 +1,23 @@
 /* Sidebar.css */
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
+  grid-row: 2 / span 2; /* Ocupa todas as linhas restantes */
     width: 200px;
     height: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 0 20px;
   }
   
-  .logo-container {
-    padding: 10px;
+  .sidebar .logo-container {
+    padding: 0 10px 10px;
   }
   
-  .logo {
+  .sidebar .logo {
     width: 100%;
     height: auto;
   }
   
-  .expand-btn {
+  .sidebar .expand-btn {
     width: 100%;
     padding: 10px;
     background-color: #555;
@@ -32,17 +30,17 @@
     justify-content: space-between;
   }
   
-  .expandable-menu {
+  .sidebar .expandable-menu {
     list-style-type: none;
     padding-left: 0;
     display: none;
   }
   
-  .expandable-menu.show {
+  .sidebar .expandable-menu.show {
     display: block;
   }
   
-  .expandable-menu li {
+  .sidebar .expandable-menu li {
     padding: 5px 10px;
     background-color: #767575;
     margin-bottom: 5px;
@@ -51,12 +49,12 @@
     align-items: center;
   }
 
-  .menu-link {
+  .sidebar .menu-link {
     text-decoration: none;
     color: white;
   }
 
-  .menu-icon {
+  .sidebar .menu-icon {
     width: 17px;
     height: 17px;
     padding: 0 10px 0 0;
