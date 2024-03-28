@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Sidebar from './sidebar/sidebar'
@@ -16,12 +16,13 @@ function App() {
     <Header pageTitle={pageTitle} />
     <nav className="Main">
         <Sidebar setPageTitle={setPageTitle} /> 
+        <span className='barra_lateral'></span>
         <div className='main-container'>
           <div className='main-container-content'>
             <Routes>
               <Route path="/produtos" element={<Produtos/>} />
-              //Route path="/fornecedores" element=Fornecedores
-              //Route path="/clientes" element=Cliente
+              {/*Route path="/fornecedores" element=Fornecedores*/}
+              {/*Route path="/clientes" element=Cliente*/}
             </Routes>
         </div>
       </div>

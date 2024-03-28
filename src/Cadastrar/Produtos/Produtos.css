@@ -1,1 +1,35 @@
+.produtos {
+    position: absolute;
+    top: 212px;
+    bottom: 0;
+    right: 350px;
+    left: 350px;
+}
 
+.Titulo {
+    display: flex;
+    background-color: white;
+    height: 172px;
+    position: absolute;
+    right: 350px;
+    left: 350px;
+    top: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group {
+    padding: 15px;
+    font-size: large;
+    margin: 15px;
+}
+
+#form {
+    width: 450px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
